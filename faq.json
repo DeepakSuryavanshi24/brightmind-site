@@ -1,0 +1,42 @@
+[
+  {
+    "q": "How do I reset my password?",
+    "a": "Click ‘Forgot password’ on the login page and follow the email instructions."
+  },
+  {
+    "q": "What is your refund policy?",
+    "a": "We offer a 30‑day, no‑questions‑asked refund. Email support with your order ID."
+  },
+  {
+    "q": "Are the courses aligned with school curricula?",
+    "a": "Yes, all lessons map to CBSE and ICSE standards for Grades 6‑10."
+  },
+  {
+    "q": "Do you provide live tutoring?",
+    "a": "Live 1‑on‑1 tutoring is available for premium members. Book slots from your dashboard."
+  },
+  {
+    "q": "Can I download the study materials?",
+    "a": "PDF notes and worksheets are downloadable from each lesson page."
+  },
+  {
+    "q": "Is there a mobile app?",
+    "a": "Our Android and iOS apps are launching in June 2025—stay tuned!"
+  },
+  {
+    "q": "How do I contact support?",
+    "a": "Email hello@brightmind.example or call +91‑98765‑43210 (10 AM–6 PM IST)."
+  },
+  {
+    "q": "Do you have scholarships?",
+    "a": "Yes, need‑based scholarships cover up to 80 % of fees. Apply from the Pricing page."
+  },
+  {
+    "q": "Which payment methods do you accept?",
+    "a": "Debit/credit cards, UPI, and net‑banking are supported via Razorpay."
+  },
+  {
+    "q": "Can teachers use your resources in class?",
+    "a": "Absolutely—teachers may project videos and print worksheets under our classroom license."
+  }
+]

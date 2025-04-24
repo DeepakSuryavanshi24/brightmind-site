@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>BrightMind Academy</title>
+  <style>
+    /* --- CSS RESET (tiny) --- */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5;color:#333;background:#f9fafb;}
+    /* --- LAYOUT --- */
+    header{background:#2563eb;color:#fff;padding:4rem 1rem;text-align:center;}
+    header h1{font-size:2.5rem;margin-bottom:.5rem;}
+    header p{font-size:1.1rem;opacity:.9;}
+    main{padding:3rem 1rem;max-width:900px;margin:auto;}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;}
+    .card{background:#fff;border-radius:12px;box-shadow:0 4px 6px rgba(0,0,0,.05);padding:1.5rem;text-align:center;transition:transform .2s;}
+    .card:hover{transform:translateY(-4px);}
+    .card h3{margin-bottom:.3rem;color:#2563eb;}
+    footer{background:#111;color:#eee;text-align:center;padding:1rem;font-size:.9rem;}
+    a{color:#93c5fd;text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    /* --- CHATBOT STYLES --- */
+    #chatbot{position:fixed;bottom:90px;right:20px;width:300px;height:380px;border-radius:12px;
+             box-shadow:0 8px 16px rgba(0,0,0,.2);background:#fff;display:none;flex-direction:column;}
+    #chat-log{flex:1;padding:10px;overflow-y:auto;font-size:14px;white-space:pre-wrap;}
+    #chat-log .user{font-weight:bold;margin:4px 0;}
+    #chat-log .bot{margin:4px 0;}
+    #chat-input{border:none;border-top:1px solid #eee;padding:8px;width:100%;box-sizing:border-box;}
+    #chatbot-launch{position:fixed;bottom:20px;right:20px;background:#2563eb;color:#fff;border:none;
+      border-radius:50%;width:56px;height:56px;font-size:1.6rem;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,.2);}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BrightMind Academy</h1>
+    <p>Quality resources &amp; guidance for school students, all in one place.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2 style="text-align:center;margin-bottom:1.5rem;">Explore Subjects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Mathematics</h3>
+          <p>Interactive lessons, practice sheets, and video walkthroughs from Grade 5 to 12.</p>
+        </article>
+        <article class="card">
+          <h3>Science</h3>
+          <p>Engaging experiments, concept animations, and revision quizzes covering Physics, Chemistry &amp; Biology.</p>
+        </article>
+        <article class="card">
+          <h3>English</h3>
+          <p>Grammar drills, vocabulary flashcards, and model essays to boost your language skills.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 BrightMind Academy ·
+    <a href="mailto:hello@brightmind.example">hello@brightmind.example</a>
+  </footer>
+
+  <!-- Chatbot widget -->
+  <button id="chatbot-launch" title="Ask a question">💬</button>
+  <div id="chatbot">
+    <div id="chat-log"></div>
+    <input id="chat-input" placeholder="Type your question…" autocomplete="off">
+  </div>
+
+  <!-- Fuse.js library + your bot logic -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
+
